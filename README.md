@@ -1,27 +1,29 @@
-import cv2
+# Trabalho para a Professora Vera
 
-# Carregar o classificador pré-treinado para detecção de rostos
-face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+Este repositório contém o código de um trabalho desenvolvido para a professora Vera. O objetivo é demonstrar um exemplo básico de detecção de imagens utilizando a biblioteca OpenCV em Python.
 
-# Carregar a imagem
-image_path = 'sua_imagem.jpg'  # Substitua pelo caminho da sua imagem
-image = cv2.imread(image_path)
+## Conteúdo
 
-if image is None:
-    print("Imagem não encontrada. Verifique o caminho.")
-    exit()
+- **Código principal**: Implementa a detecção de rostos em imagens usando o classificador Haar Cascade.
+- **Dependências**: O código utiliza bibliotecas como OpenCV.
 
-# Converter a imagem para escala de cinza
-gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+## Como executar
 
-# Detectar rostos na imagem
-faces = face_cascade.detectMultiScale(gray_image, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+1. Certifique-se de ter Python instalado.
+2. Instale as dependências com o seguinte comando:
+   ```bash
+   pip install opencv-python
+   ```
+   (ou `opencv-python-headless`, caso esteja em um ambiente sem suporte gráfico).
+3. Substitua o caminho da imagem no código pelo arquivo que deseja testar.
+4. Execute o script para processar a imagem.
 
-# Desenhar retângulos ao redor dos rostos detectados
-for (x, y, w, h) in faces:
-    cv2.rectangle(image, (x, y), (x + w, y + h), (255, 0, 0), 2)
+## Resultado
 
-# Mostrar a imagem com os rostos detectados
-cv2.imshow('Detecção de Rostos', image)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+O programa detecta rostos na imagem fornecida e salva o resultado em um arquivo ou exibe uma janela com os rostos detectados (dependendo do ambiente de execução).
+
+---
+
+**Disciplina**: Ciência de Dados  
+**Professor(a)**: Vera  
+**Aluno**: Cauã Christoni
