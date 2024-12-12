@@ -26,4 +26,4 @@ O programa detecta rostos na imagem fornecida e salva o resultado em um arquivo 
 
 **Disciplina**: Ciência de Dados  
 **Professor(a)**: Vera  
-**Aluno**: Cauã Christoni
+**Aluno**: Cauã

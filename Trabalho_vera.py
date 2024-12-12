@@ -4,7 +4,7 @@ import cv2
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # Carregar a imagem
-image_path = 'imagem.png'  # Substitua pelo caminho da sua imagem
+image_path = 'image.png'  # Substitua pelo caminho da sua imagem
 image = cv2.imread(image_path)
 
 if image is None:
