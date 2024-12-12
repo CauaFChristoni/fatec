@@ -1,4 +1,4 @@
-# Trabalho para a Professora Vera
+# Trabalho para a Professora Vera (Projeto "Iniciante")
 
 Este repositório contém o código de um trabalho desenvolvido para a professora Vera. O objetivo é demonstrar um exemplo básico de detecção de imagens utilizando a biblioteca OpenCV em Python.
 
